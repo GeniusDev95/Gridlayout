@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlayout</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: #00DBDE;
+            background-image: linear-gradient(180deg, #00DBDE 0%, #FC00FF 100%);
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 300px;
+            width: 450px;
+            
+        }
+        .box{
+            background-color: lightgray;
+            margin: 15px;
+            border: solid white;
+            
+
+        }
+        .con1{
+            grid-area: con1;
+            background-color: white;
+            margin: 2px;
+            
+        }
+        .con2{
+            grid-area: con2;
+            background-color: white;
+            margin: 2px;
+
+
+        }
+        .con3{
+            grid-area: con3;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .con4{
+            grid-area: con4;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .con5{
+            grid-area: con5;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .con6{
+            grid-area: con6;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .con7{
+            grid-area: con7;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .con8{
+            grid-area: con8;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .con9{
+            grid-area: con9;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .con10{
+            grid-area: con10;
+            background-color: white;
+            margin: 2px;
+
+        }
+        .box1{
+            display: grid;
+            grid-template-areas: "con1 con2 con3"
+                                 "con1  con2 con3" ;
+            padding: 2px;
+        }
+        .box2{
+            display: grid;
+            grid-template-areas: "con1 con2 "
+                                 "con1 con3" ;
+            padding: 2px;
+        }
+        .box3{
+            display: grid;
+            grid-template-areas: "con1 con2 con3 "
+                                 "con4 con5 con6" ;
+            padding: 2px;
+        }
+        .box4{
+            display: grid;
+            grid-template-areas: "con1 con2 con3 "
+                                 "con4 con2 con6"
+                                 "con4 con5 con6" ;
+            padding: 2px;
+        }
+        .box5{
+            display: grid;
+            grid-template-areas: "con1 con1 con1 con2 con2 con2 "
+                                 "con3 con3 con4 con4 con5 con5" ;
+            padding: 2px;
+        }
+        .box6{
+            display: grid;
+            grid-template-areas: "con1 con1 con3 "
+                                 "con1 con1 con5"
+                                 "con1 con1 con5"
+                                 "con2 con4 con6" ;
+            padding: 2px;
+        }
+        .box7{
+            display: grid;
+            grid-template-areas: "con1 con1 con3 con3"
+                                 "con1 con1 con3 con3"
+                                 "con1 con1 con2 con4"
+                                 "con1 con1 con5 con4" ;
+            padding: 2px;
+        }
+        .box8{
+            display: grid;
+            grid-template-areas: "con1 con1 con2 con2 con5"
+                                 "con1 con1 con2 con2 con5"
+                                 "con1 con1 con2 con2 con6"
+                                 "con1 con1 con3 con4 con7"
+                                 "con1 con1 con3 con4 con7" ;
+            padding: 2px;
+        }
+        .box9{
+            display: grid;
+            grid-template-areas: "con1 con2 con3 con4 "
+                                 "con5 con5 con6 con6 "
+                                 "con5 con5 con6 con6 "
+                                 "con7 con8 con9 con10 " ;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+
+        </div>
+        <div class="box box2">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+        </div>
+        <div class="box box3">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+            <div class="con4">
+
+            </div>
+            <div class="con5">
+                
+            </div>
+            <div class="con6">
+                
+            </div>
+        </div>
+        <div class="box box4">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+            <div class="con4">
+
+            </div>
+            <div class="con5">
+                
+            </div>
+            <div class="con6">
+                
+            </div>
+        </div>
+        <div class="box box5">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+            <div class="con4">
+
+            </div>
+            <div class="con5">
+                
+            </div>
+            
+        </div>
+        <div class="box box6">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+            <div class="con4">
+
+            </div>
+            <div class="con5">
+                
+            </div>
+            <div class="con6">
+                
+            </div>
+        </div>
+        <div class="box box7">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+            <div class="con4">
+
+            </div>
+            <div class="con5">
+                
+            </div>
+            
+        </div>
+        <div class="box box8">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+            <div class="con4">
+
+            </div>
+            <div class="con5">
+                
+            </div>
+            <div class="con6">
+                
+            </div>
+            <div class="con7">
+                
+            </div>
+        </div>
+        <div class="box box9">
+            <div class="con1">
+
+            </div>
+            <div class="con2">
+                
+            </div>
+            <div class="con3">
+                
+            </div>
+            <div class="con4">
+
+            </div>
+            <div class="con5">
+                
+            </div>
+            <div class="con6">
+                
+            </div>
+            <div class="con7">
+                
+            </div>
+            <div class="con8">
+                
+            </div>
+            <div class="con9">
+                
+            </div>
+            <div class="con10">
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
